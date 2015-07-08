@@ -1,0 +1,9 @@
+syslogger:
+  build: . 
+  restart: "on-failure"
+  volumes:
+    - "/var/run/docker.sock:/tmp/docker.sock"
+  environment:
+    - "HOSTNAME=YOUR-HOSTNAME-HERE"
+  command:
+    - "YOUR-URI-HERE"  
