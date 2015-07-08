@@ -6,19 +6,19 @@ Image based on gliderlabs/logspout optimized for syslog and Tutum
 
 ## Usage
 
-docker-compose run -d -e HOSTNAME=<YOUR-HOSTNAME> syslogger "<YOUR-URI>"
+    docker-compose run -d -e HOSTNAME=<YOUR-HOSTNAME> syslogger "<YOUR-URI>"
 
 replacing `<YOUR-HOSTNAME>` with the name you want it to appear in your log managment service and `<YOUR-URI>` with the URI you will like to send your logs to.
 
 ### Example using Papertrail
 
-docker-compose run -d -e HOSTNAME=<YOUR-HOSTNAME> syslogger "syslog://<YOUR-PAPERTRAIL-URI>"
+    docker-compose run -d -e HOSTNAME=<YOUR-HOSTNAME> syslogger "syslog://<YOUR-PAPERTRAIL-URI>"
 
 replacing `<YOUR-PAPERTRAIL-URI>` with your own papertrail URI. An example of Papertrail URI can be `logs.papertrailapp.com:55555`.
 
 ### Example using Loggly
 
-docker-compose run -d -e HOSTNAME=<YOUR-HOSTNAME> syslogger "rfc5424://logs-01.loggly.com:514?structuredData=<YOUR-CUSTOMER-TOKEN>@41058"
+    docker-compose run -d -e HOSTNAME=<YOUR-HOSTNAME> syslogger "rfc5424://logs-01.loggly.com:514?structuredData=<YOUR-CUSTOMER-TOKEN>@41058"
 
 replacing `<YOUR-CUSTOMER-TOKEN>` with the customer token that you can find on "Source Setup"->"Customer Tokens".
 
