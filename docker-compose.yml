@@ -4,6 +4,6 @@ syslogger:
   volumes:
     - "/var/run/docker.sock:/tmp/docker.sock"
   environment:
-    - "HOSTNAME=YOUR-HOSTNAME-HERE"
+    - "HOSTNAME=TUTUM-SYSLOGGER"
   command:
     - "YOUR-URI-HERE"  
