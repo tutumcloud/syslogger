@@ -1,4 +1,4 @@
-FROM gliderlabs/logspout:master
+FROM gliderlabs/logspout:latest
 MAINTAINER support@tutum.co
 
 # Output of: yaml2json tutum.yml | tr "\n" " " | sed 's/"/\\"/g'
