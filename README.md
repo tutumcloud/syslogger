@@ -1,5 +1,8 @@
 # tutum/syslogger
 
+**This image will be deprecated soon. Please use the image: ** https://hub.docker.com/r/gliderlabs/logspout/
+
+
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
 
 Image based on gliderlabs/logspout optimized for syslog and Tutum
