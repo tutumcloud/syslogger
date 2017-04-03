@@ -1,9 +1,0 @@
-syslogger:
-  build: . 
-  restart: "on-failure"
-  volumes:
-    - "/var/run/docker.sock:/tmp/docker.sock"
-  environment:
-    - "HOSTNAME=TUTUM-SYSLOGGER"
-  command:
-    - "YOUR-URI-HERE"  
